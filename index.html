@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>macarons</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,100&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1ad0f4018e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="home">
+        <div class="navbar">
+            <div class="logo">
+                <img src="th-removebg-preview.png" alt="">
+            <a href="">Macarons store</a></div>
+                <ul class="links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#var">VARIETIES</a></li>
+                <li><a href="">ABOUT US</a></li>
+
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">FEED BACK</a></li></ul>
+           
+                <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+            <div class="dropdown_menu ">
+                <li><a href="">HOME</a></li>
+                <li><a  href="#var">VARIETIES</a></li>
+                <li><a href="">ABOUT US</a></li>
+
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">FEED BACK</a></li>
+            
+
+            </div>
+        
+    </header>
+
+    <script>
+        const toogleBtn = document.querySelector('.toggle_btn ')
+        const toogleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu ')
+
+        toogleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toogleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+
+        }
+
+
+    </script>
+    <div class="container">
+      <h2 id="var">  VARIETIES</h2>
+        <div class="img1">
+            <img src="./Macaron-photo-3-removebg-preview.png" alt="">
+            <ul>
+                <li>
+                     <h1>Lavender</h1></li>
+                     <li><p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Sit sunt totam maiores illo, culpa <br> odio facere doloribus praesentium inventore nulla quos <br> nobis, nostrum repellendus ex aut eaque optio, ducimus dolor.</p>
+                </li>
+                <button>BUY NOW</button>
+          </ul>
+            
+        </div>
+        <div class="img2">
+           <ul>
+                <h1>Mint Chocolate </h1>
+    
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Sit sunt totam maiores illo, culpa <br> odio facere doloribus praesentium inventore nulla quos <br> nobis, nostrum repellendus ex aut eaque optio, ducimus dolor.</p>
+                <button>BUY NOW</button>
+           </ul>
+
+            <img src="./flying-macarons-different-types-macaroons-motion-falling-pink-background-sweet-colourful-french-macaroons-falling-93287190-removebg-preview.png" alt="">
+
+           
+        </div>
+        <div class="img3">
+            <img src="./pexels-photo-7296705-removebg-preview.png" alt="">
+            <ul>
+                <li>
+                     <h1>Almond</h1></li>
+                     <li><p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Sit sunt totam maiores illo, culpa <br> odio facere doloribus praesentium inventore nulla quos <br> nobis, nostrum repellendus ex aut eaque optio, ducimus dolor.</p>
+                </li>
+                <button>BUY NOW</button>
+          </ul>
+        </div>
+        <div class="img4">
+           <ul>
+                <h1>Fruity Pebbles</h1>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Sit sunt totam maiores illo, culpa <br> odio facere doloribus praesentium inventore nulla quos <br> nobis, nostrum repellendus ex aut eaque optio, ducimus dolor.</p>
+                <button>BUY NOW</button>
+           </ul>
+            <img src="./pexels-photo-14823409-removebg-preview.png" alt="">
+
+        </div>
+
+
+    </div>
+      
+</body>
+</html>
